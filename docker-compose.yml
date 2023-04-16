@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+  database:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "${DBPASSWORD}"
+    ports:
+      - "5432:${DBPORT}"
