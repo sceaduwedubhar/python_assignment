@@ -155,4 +155,7 @@ GET http://localhost:8000/api/statistics?start_date=2023-01-01&end_date=2023-01-
 ## API KEY of free API provider AlphaVantage
 
 API Key is stored in ```.env``` file with key name **APIKEY**.
+
+You can update the **APIKEY** in ```.env``` file for local development and production environment separately.
+
 In actual practice, ```.env``` file should be excluded in version control. You may add ```.env``` to ```.gitignore``` file.
