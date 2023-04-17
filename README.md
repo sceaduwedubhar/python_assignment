@@ -29,7 +29,7 @@
 - uvicorn
   - ASGI web server
 - requests
-  - request data from AlphaVantage API
+  - request data from [AlphaVantage](https://www.alphavantage.co/documentation/) API
 - sqlalchemy
   - ORM library, used for communicating with database
 - psycopg2-binary
@@ -53,7 +53,7 @@ docker exec -it <container-id> bash
 python model.py
 ```
 
-### Retrieve data from AlphaVantage
+### Retrieve data from [AlphaVantage](https://www.alphavantage.co/documentation/)
 #### Access docker container 
 ```
 docker exec -it <container-id> bash
@@ -152,7 +152,7 @@ GET http://localhost:8000/api/statistics?start_date=2023-01-01&end_date=2023-01-
 }
 ```
 
-## API KEY of free API provider AlphaVantage
+## API KEY of free API provider [AlphaVantage](https://www.alphavantage.co/documentation/)
 
 API Key should be stored in ```.env``` file with key name **APIKEY**.
 
